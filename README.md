@@ -6,6 +6,13 @@ La aplicación de ejemplo que se incluye, tiene 5 servicios de una supuesta red 
 
 El sistema se comporta de la siguiente manera: si un servicio no está disponible en un país, y por alguna razón está activado, se muestra en color rojo para advertir de la situación, y si no, se muestra transparente para ayudar a evitar que se accione sin querer.
 
+La interfaz full-responsive está hecha con AngularJS y Bootstrap.
+
+![toggler](https://user-images.githubusercontent.com/29981509/27976130-3a13d602-6333-11e7-9da3-95a3750ac339.png)
+
+![toggler oos](https://user-images.githubusercontent.com/29981509/27976135-3f3901fc-6333-11e7-8ab9-18028eba596c.png)
+
+
 ### Cómo ejecutar
 
 Se incluye un lanzador que para operar la aplicación fácilmente usando Docker con comandos para instalar, lanzar y detener:
