@@ -1,0 +1,29 @@
+{
+  "features": [
+    {
+      "name": "public timeline",
+      "active": true,
+      "scope": true
+    },
+    {
+      "name": "private messages",
+      "active": true,
+      "scope": true
+    },
+    {
+      "name": "chat",
+      "active": true,
+      "scope": true
+    },
+    {
+      "name": "friend groups",
+      "active": true,
+      "scope": true
+    },
+    {
+      "name": "news",
+      "active": true,
+      "scope": true
+    }
+  ]
+}

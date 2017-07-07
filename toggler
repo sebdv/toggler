@@ -1,0 +1,20 @@
+#!/bin/sh
+
+case $1 in
+    "install")
+        echo instalando
+        docker build --build-arg=HTTP_PROXY=http://10.68.2.251:3128 --build-arg=HTTPS_PROXY=http://10.68.2.251:3128 -t toggler .
+        ;;
+    "run")
+        echo Corriendo Docker: http://localhost:9191
+        docker run -dp9191:9191 --rm --name toggler toggler
+        ;;
+    "stop")
+        echo Deteniendo Docker
+        docker stop toggler
+        ;;
+     "")
+        echo comandos disponibles:
+        echo install, run, stop
+        ;;
+esac

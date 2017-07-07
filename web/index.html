@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>toggler</title>
+    <script src="assets/angular.js"></script>
+    <script src="assets/lodash.min.js"></script>
+    <script src="assets/restangular.js"></script>
+    <script src="assets/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/toggler.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body ng-app="toggler" ng-controller="toggler">
+
+<div class="header col-md-12">
+</div>
+
+<div class="title col-md-12">
+    Interruptores de servicios
+
+    <div class="selector">
+        <select ng-model="country" ng-change="load()">
+            <option value="ar">Argentina</option>
+            <option value="cl">Chile</option>
+            <option value="pe">Per&uacute;</option>
+        </select>
+    </div>
+</div>
+
+
+<div class="toggles">
+    <div class="toggle col-xs-12 col-sm-6 col-md-4 col-lg-3" ng-repeat="toggle in config.features">
+        <div class="toggle-box" ng-class="{'out-of-scope': !toggle.scope, 'warning': !toggle.scope && toggle.active}">
+            <h1>{{toggle.name}}</h1>
+            <p>{{descriptions[toggle.name]}}</p>
+            <input class="tgl tgl-skewed" ng-model="toggle.active" id="{{toggle.name}}" type="checkbox" ng-model="toggle.active" />
+            <label class="tgl-btn" data-tg-off="APAGADO" data-tg-on="ENCENDIDO" for="{{toggle.name}}"></label>
+            <p class="notice">{{getNotice(toggle)}}</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
