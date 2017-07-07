@@ -12,7 +12,7 @@
     },
     {
       "name": "chat",
-      "active": true,
+      "active": false,
       "scope": true
     },
     {
@@ -22,7 +22,7 @@
     },
     {
       "name": "news",
-      "active": true,
+      "active": false,
       "scope": true
     }
   ]

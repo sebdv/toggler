@@ -8,9 +8,9 @@ El sistema se comporta de la siguiente manera: si un servicio no está disponibl
 
 La interfaz full-responsive está hecha con AngularJS y Bootstrap.
 
-![toggler](https://user-images.githubusercontent.com/29981509/27976130-3a13d602-6333-11e7-9da3-95a3750ac339.png)
+![toggler](https://user-images.githubusercontent.com/29981509/27976323-eb975278-6333-11e7-8d44-da8c2e573fd0.png)
 
-![toggler oos](https://user-images.githubusercontent.com/29981509/27976135-3f3901fc-6333-11e7-8ab9-18028eba596c.png)
+![toggler oos](https://user-images.githubusercontent.com/29981509/27976326-edb9ed04-6333-11e7-9dce-a6aa69068830.png)
 
 
 ### Cómo ejecutar

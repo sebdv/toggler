@@ -2,7 +2,7 @@
   "features": [
     {
       "name": "public timeline",
-      "active": false,
+      "active": true,
       "scope": true
     },
     {
@@ -12,7 +12,7 @@
     },
     {
       "name": "chat",
-      "active": false,
+      "active": true,
       "scope": false
     },
     {
@@ -22,7 +22,7 @@
     },
     {
       "name": "news",
-      "active": false,
+      "active": true,
       "scope": true
     }
   ]
